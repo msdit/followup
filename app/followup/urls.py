@@ -10,8 +10,6 @@ admin.site.site_header = "Follow Up Panel"
 admin.site.site_title = "FOLLOW UP"
 admin.site.index_title = "Admin Panel"
 
-print(static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
-
 urlpatterns = [
     path("admin/", admin.site.urls),
     url(r"^static/(?P<path>.*)$", serve, {"document_root": settings.STATIC_ROOT}),

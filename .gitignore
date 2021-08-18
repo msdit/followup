@@ -1,6 +1,6 @@
 __pycache__/
 data
 env
-local_settongs*
+local_settings*
 static/
 .vscode/
