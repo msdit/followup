@@ -1,0 +1,6 @@
+__pycache__/
+data
+env
+local_settongs*
+static/
+.vscode/

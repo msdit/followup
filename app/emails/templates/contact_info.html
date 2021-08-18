@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block scripts %}
+<script>
+</script>
+{% endblock %}
+
+{% block content %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <ul class="container">
+      {% comment %} {{ len(inbox) }} {% endcomment %}
+      {% for email in new_emails %}
+      <li>
+        {{msgid}} -> {{ email.generated_subject }} -> {{
+        data.data }}
+        <form action="{% url 'send_email' 29 %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Vote">
+        </form>
+      </li>
+      {% endfor %}
+      {% comment %} {{user.imap_server}} {% endcomment %}
+    </ul>
+  </div>
+{% endblock %}
