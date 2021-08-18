@@ -186,7 +186,7 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-f = os.path.join(BASE_DIR, "followup", "local_settings.local.py")
-# f = os.path.join(BASE_DIR, "followup", "local_settings.py")
+# f = os.path.join(BASE_DIR, "followup", "local_settings.local.py")
+f = os.path.join(BASE_DIR, "followup", "local_settings.py")
 if os.path.exists(f):
     exec(open(f, "rb").read())
