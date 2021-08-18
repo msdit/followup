@@ -1,0 +1,550 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Aug 18 11:59:06 2021] ***
+compiled with version: 8.3.0 on 13 August 2021 11:00:08
+os: Linux-5.11.0-25-generic #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021
+nodename: 76d71c1e8bee
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /app
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.6 (default, Jul 22 2021, 15:16:20)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5607b3cbf360
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5607b3cbf360 pid: 7 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7)
+spawned uWSGI worker 1 (pid: 8, cores: 2)
+spawned uWSGI worker 2 (pid: 10, cores: 2)
+[pid: 8|app: 0|req: 1/1] 172.20.0.1 () {58 vars in 1496 bytes} [Wed Aug 18 07:59:16 2021] POST /admin/login/?next=/e => generated 2380 bytes in 462 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 8|app: 0|req: 3/2] 172.20.0.1 () {48 vars in 1221 bytes} [Wed Aug 18 07:59:16 2021] GET /static/admin/css/login.css => generated 939 bytes in 20 msecs via sendfile() (HTTP/1.1 200) 7 headers in 247 bytes (0 switches on core 1)
+[pid: 8|app: 0|req: 3/3] 172.20.0.1 () {48 vars in 1231 bytes} [Wed Aug 18 07:59:16 2021] GET /static/admin/css/responsive.css => generated 18545 bytes in 20 msecs via sendfile() (HTTP/1.1 200) 7 headers in 254 bytes (0 switches on core 0)
+[pid: 10|app: 0|req: 2/4] 172.20.0.1 () {48 vars in 1233 bytes} [Wed Aug 18 07:59:16 2021] GET /static/admin/css/nav_sidebar.css => generated 2271 bytes in 95 msecs via sendfile() (HTTP/1.1 200) 7 headers in 254 bytes (0 switches on core 1)
+[pid: 10|app: 0|req: 2/5] 172.20.0.1 () {48 vars in 1219 bytes} [Wed Aug 18 07:59:16 2021] GET /static/admin/css/base.css => generated 19513 bytes in 110 msecs via sendfile() (HTTP/1.1 200) 7 headers in 248 bytes (0 switches on core 0)
+[pid: 10|app: 0|req: 3/6] 172.20.0.1 () {48 vars in 1215 bytes} [Wed Aug 18 07:59:16 2021] GET /static/admin/js/nav_sidebar.js => generated 1360 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 267 bytes (0 switches on core 1)
+[pid: 10|app: 0|req: 4/7] 172.20.0.1 () {48 vars in 1226 bytes} [Wed Aug 18 07:59:16 2021] GET /static/admin/css/fonts.css => generated 423 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 247 bytes (0 switches on core 0)
+[pid: 10|app: 0|req: 5/8] 172.20.0.1 () {50 vars in 1284 bytes} [Wed Aug 18 07:59:17 2021] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 85876 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 268 bytes (0 switches on core 1)
+[pid: 8|app: 0|req: 4/9] 172.20.0.1 () {50 vars in 1280 bytes} [Wed Aug 18 07:59:17 2021] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 85692 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 266 bytes (0 switches on core 1)
+[pid: 10|app: 0|req: 6/10] 172.20.0.1 () {50 vars in 1278 bytes} [Wed Aug 18 07:59:17 2021] GET /static/admin/fonts/Roboto-Bold-webfont.woff => generated 86184 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 265 bytes (0 switches on core 1)
+[pid: 10|app: 0|req: 7/11] 172.20.0.1 () {48 vars in 1237 bytes} [Wed Aug 18 07:59:17 2021] GET /favicon.ico => generated 179 bytes in 21 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Aug 18 12:07:30 2021] ***
+compiled with version: 8.3.0 on 13 August 2021 11:00:08
+os: Linux-5.11.0-25-generic #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021
+nodename: 1c600fdf6d92
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /app
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.6 (default, Jul 22 2021, 15:16:20)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55abc44c1360
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55abc44c1360 pid: 13 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13)
+spawned uWSGI worker 1 (pid: 14, cores: 2)
+spawned uWSGI worker 2 (pid: 16, cores: 2)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Aug 18 12:18:06 2021] ***
+compiled with version: 8.3.0 on 18 August 2021 12:17:18
+os: Linux-5.11.0-25-generic #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021
+nodename: d5dbc69fee01
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /app
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.6 (default, Jul 22 2021, 15:16:20)  [GCC 8.3.0]
+Python main interpreter initialized at 0x56417cacc360
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56417cacc360 pid: 8 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8)
+spawned uWSGI worker 1 (pid: 9, cores: 2)
+spawned uWSGI worker 2 (pid: 11, cores: 2)
+[pid: 11|app: 0|req: 1/1] 172.22.0.1 () {56 vars in 1474 bytes} [Wed Aug 18 08:18:18 2021] POST /admin/login/?next=/e => generated 2380 bytes in 453 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 3/2] 172.22.0.1 () {46 vars in 1223 bytes} [Wed Aug 18 08:18:18 2021] GET /static/admin/css/login.css => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 3/3] 172.22.0.1 () {46 vars in 1233 bytes} [Wed Aug 18 08:18:18 2021] GET /static/admin/css/responsive.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 4/4] 172.22.0.1 () {46 vars in 1235 bytes} [Wed Aug 18 08:18:18 2021] GET /static/admin/css/nav_sidebar.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 1/5] 172.22.0.1 () {46 vars in 1221 bytes} [Wed Aug 18 08:18:18 2021] GET /static/admin/css/base.css => generated 0 bytes in 98 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 2/6] 172.22.0.1 () {46 vars in 1217 bytes} [Wed Aug 18 08:18:19 2021] GET /static/admin/js/nav_sidebar.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 3/7] 172.22.0.1 () {46 vars in 1228 bytes} [Wed Aug 18 08:18:19 2021] GET /static/admin/css/fonts.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 6/8] 172.22.0.1 () {48 vars in 1286 bytes} [Wed Aug 18 08:18:19 2021] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 6/9] 172.22.0.1 () {48 vars in 1282 bytes} [Wed Aug 18 08:18:19 2021] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 4/10] 172.22.0.1 () {48 vars in 1280 bytes} [Wed Aug 18 08:18:19 2021] GET /static/admin/fonts/Roboto-Bold-webfont.woff => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 7/11] 172.22.0.1 () {56 vars in 1474 bytes} [Wed Aug 18 08:20:49 2021] POST /admin/login/?next=/e => generated 0 bytes in 305 msecs (HTTP/1.1 302) 11 headers in 620 bytes (1 switches on core 1)
+[pid: 9|app: 0|req: 5/12] 172.22.0.1 () {50 vars in 1374 bytes} [Wed Aug 18 08:20:50 2021] GET /e => generated 179 bytes in 14 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 8/13] 172.22.0.1 () {46 vars in 1276 bytes} [Wed Aug 18 08:20:53 2021] GET / => generated 145 bytes in 1544 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Aug 18 12:26:27 2021] ***
+compiled with version: 8.3.0 on 18 August 2021 12:17:18
+os: Linux-5.11.0-25-generic #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021
+nodename: d5dbc69fee01
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /app
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.6 (default, Jul 22 2021, 15:16:20)  [GCC 8.3.0]
+Python main interpreter initialized at 0x561ff95d9360
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x561ff95d9360 pid: 8 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8)
+spawned uWSGI worker 1 (pid: 9, cores: 2)
+spawned uWSGI worker 2 (pid: 11, cores: 2)
+[pid: 9|app: 0|req: 1/1] 172.22.0.1 () {50 vars in 1400 bytes} [Wed Aug 18 08:26:30 2021] GET /admin/emails/contact/ => generated 0 bytes in 185 msecs (HTTP/1.1 302) 10 headers in 445 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 1/2] 172.22.0.1 () {50 vars in 1393 bytes} [Wed Aug 18 08:26:30 2021] GET /admin/login/?next=/admin/emails/contact/ => generated 2237 bytes in 295 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 2/3] 172.22.0.1 () {56 vars in 1534 bytes} [Wed Aug 18 08:26:33 2021] POST /admin/login/?next=/admin/emails/contact/ => generated 0 bytes in 343 msecs (HTTP/1.1 302) 11 headers in 640 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 3/4] 172.22.0.1 () {50 vars in 1434 bytes} [Wed Aug 18 08:26:33 2021] GET /admin/emails/contact/ => generated 7006 bytes in 73 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 3/5] 172.22.0.1 () {44 vars in 1233 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/js/vendor/jquery/jquery.min.js => generated 89476 bytes in 17 msecs via sendfile() (HTTP/1.1 200) 7 headers in 267 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 4/6] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 5/8] 172.22.0.1 () {44 vars in 1173 bytes} [Wed Aug 18 08:26:33 2021] GET /admin/jsi18n/ => generated 3195 bytes in 32 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 9|app: 0|req: 5/9] 172.22.0.1 () {46 vars in 1248 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/js/core.js => generated 0 bytes in 10 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 5/9] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 6 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 5/10] 172.22.0.1 () {46 vars in 1292 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 11 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 6/11] 172.22.0.1 () {46 vars in 1254 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/js/actions.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 6/12] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 8/13] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 8/14] 172.22.0.1 () {44 vars in 1237 bytes} [Wed Aug 18 08:26:33 2021] GET /static/admin/js/vendor/xregexp/xregexp.min.js => generated 125266 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 7 headers in 269 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 9/15] 172.22.0.1 () {46 vars in 1316 bytes} [Wed Aug 18 08:26:34 2021] GET /static/admin/img/search.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 7/16] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:26:34 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 10/17] 172.22.0.1 () {48 vars in 1354 bytes} [Wed Aug 18 08:26:38 2021] GET /admin/ => generated 5138 bytes in 30 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 11/18] 172.22.0.1 () {46 vars in 1261 bytes} [Wed Aug 18 08:26:38 2021] GET /static/admin/css/dashboard.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 8/19] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:26:38 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 9/20] 172.22.0.1 () {46 vars in 1338 bytes} [Wed Aug 18 08:26:38 2021] GET /static/admin/img/icon-changelink.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 10/21] 172.22.0.1 () {48 vars in 1359 bytes} [Wed Aug 18 08:26:40 2021] GET /admin/user/user/ => generated 8759 bytes in 136 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+[pid: 9|app: 0|req: 11/22] 172.22.0.1 () {46 vars in 1275 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 12/23] 172.22.0.1 () {46 vars in 1257 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 13/24] 172.22.0.1 () {46 vars in 1243 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/js/core.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 13/25] 172.22.0.1 () {46 vars in 1287 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 13/26] 172.22.0.1 () {44 vars in 1168 bytes} [Wed Aug 18 08:26:41 2021] GET /admin/jsi18n/ => generated 3195 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 14/27] 172.22.0.1 () {46 vars in 1249 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/js/actions.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 14/28] 172.22.0.1 () {46 vars in 1247 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 15/29] 172.22.0.1 () {46 vars in 1257 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 16/30] 172.22.0.1 () {46 vars in 1311 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/img/search.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 15/31] 172.22.0.1 () {46 vars in 1315 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/img/icon-yes.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 17/32] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 16/33] 172.22.0.1 () {46 vars in 1334 bytes} [Wed Aug 18 08:26:41 2021] GET /static/admin/img/sorting-icons.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 18/34] 172.22.0.1 () {48 vars in 1387 bytes} [Wed Aug 18 08:26:42 2021] GET /admin/user/user/1/change/ => generated 19411 bytes in 141 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 17/35] 172.22.0.1 () {46 vars in 1272 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/css/forms.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 20/36] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 18/37] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/core.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 21/38] 172.22.0.1 () {46 vars in 1296 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 19/39] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/SelectBox.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 21/40] 172.22.0.1 () {44 vars in 1177 bytes} [Wed Aug 18 08:26:43 2021] GET /admin/jsi18n/ => generated 3195 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 9|app: 0|req: 20/41] 172.22.0.1 () {46 vars in 1258 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/actions.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 21/42] 172.22.0.1 () {46 vars in 1270 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/SelectFilter2.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 22/43] 172.22.0.1 () {46 vars in 1256 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 23/44] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 24/45] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/css/widgets.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 25/46] 172.22.0.1 () {46 vars in 1276 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/prepopulate_init.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 26/47] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 27/48] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:26:43 2021] GET /static/admin/js/change_form.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 22/49] 172.22.0.1 () {46 vars in 1323 bytes} [Wed Aug 18 08:26:44 2021] GET /static/admin/img/search.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 23/50] 172.22.0.1 () {46 vars in 1339 bytes} [Wed Aug 18 08:26:44 2021] GET /static/admin/img/selector-icons.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 28/51] 172.22.0.1 () {50 vars in 1418 bytes} [Wed Aug 18 08:27:07 2021] GET /admin/user/user/1/change/ => generated 19411 bytes in 104 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 24/52] 172.22.0.1 () {46 vars in 1272 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/css/forms.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 25/53] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 30/54] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/js/core.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 30/55] 172.22.0.1 () {44 vars in 1177 bytes} [Wed Aug 18 08:27:07 2021] GET /admin/jsi18n/ => generated 3195 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 26/56] 172.22.0.1 () {46 vars in 1296 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 31/57] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/js/SelectBox.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 32/58] 172.22.0.1 () {46 vars in 1258 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/js/actions.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 27/59] 172.22.0.1 () {46 vars in 1270 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/js/SelectFilter2.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 28/60] 172.22.0.1 () {46 vars in 1256 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 29/61] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:27:07 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 30/62] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:27:08 2021] GET /static/admin/css/widgets.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 31/63] 172.22.0.1 () {46 vars in 1276 bytes} [Wed Aug 18 08:27:08 2021] GET /static/admin/js/prepopulate_init.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 32/64] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:27:08 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 33/65] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:27:08 2021] GET /static/admin/js/change_form.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 33/66] 172.22.0.1 () {46 vars in 1323 bytes} [Wed Aug 18 08:27:08 2021] GET /static/admin/img/search.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 34/67] 172.22.0.1 () {46 vars in 1339 bytes} [Wed Aug 18 08:27:08 2021] GET /static/admin/img/selector-icons.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 34/68] 172.22.0.1 () {56 vars in 1534 bytes} [Wed Aug 18 08:27:23 2021] POST /admin/user/user/1/change/ => generated 0 bytes in 59 msecs (HTTP/1.1 302) 10 headers in 600 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 35/69] 172.22.0.1 () {50 vars in 1642 bytes} [Wed Aug 18 08:27:23 2021] GET /admin/user/user/ => generated 8965 bytes in 34 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 36/70] 172.22.0.1 () {46 vars in 1275 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 37/71] 172.22.0.1 () {46 vars in 1257 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 36/72] 172.22.0.1 () {46 vars in 1243 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/js/core.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 37/73] 172.22.0.1 () {46 vars in 1287 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 38/74] 172.22.0.1 () {46 vars in 1249 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/js/actions.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 38/75] 172.22.0.1 () {44 vars in 1168 bytes} [Wed Aug 18 08:27:24 2021] GET /admin/jsi18n/ => generated 3195 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 38/76] 172.22.0.1 () {46 vars in 1247 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 39/77] 172.22.0.1 () {46 vars in 1257 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 39/78] 172.22.0.1 () {46 vars in 1311 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/img/search.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 40/79] 172.22.0.1 () {46 vars in 1315 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/img/icon-yes.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 41/80] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 40/81] 172.22.0.1 () {46 vars in 1334 bytes} [Wed Aug 18 08:27:24 2021] GET /static/admin/img/sorting-icons.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 41/82] 172.22.0.1 () {48 vars in 1359 bytes} [Wed Aug 18 08:27:26 2021] GET /admin/user/ => generated 2744 bytes in 28 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 42/83] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:27:26 2021] GET /static/admin/css/dashboard.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 43/84] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:27:27 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 44/85] 172.22.0.1 () {46 vars in 1338 bytes} [Wed Aug 18 08:27:27 2021] GET /static/admin/img/icon-changelink.svg => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 42/86] 172.22.0.1 () {48 vars in 1344 bytes} [Wed Aug 18 08:27:28 2021] GET /admin/ => generated 5452 bytes in 33 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 45/87] 172.22.0.1 () {46 vars in 1261 bytes} [Wed Aug 18 08:27:28 2021] GET /static/admin/css/dashboard.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 43/88] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:27:29 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 44/89] 172.22.0.1 () {46 vars in 1338 bytes} [Wed Aug 18 08:27:29 2021] GET /static/admin/img/icon-changelink.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 45/90] 172.22.0.1 () {48 vars in 1327 bytes} [Wed Aug 18 08:27:31 2021] GET / => generated 145 bytes in 1107 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Aug 18 12:27:49 2021] ***
+compiled with version: 8.3.0 on 18 August 2021 12:17:18
+os: Linux-5.11.0-25-generic #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021
+nodename: d5dbc69fee01
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /app
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.6 (default, Jul 22 2021, 15:16:20)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5635308bd360
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5635308bd360 pid: 8 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8)
+spawned uWSGI worker 1 (pid: 9, cores: 2)
+spawned uWSGI worker 2 (pid: 11, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/app/./emails/view.py", line 91, in home_view
+    set([msg.from_ for msg in mailbox.fetch(OR(from_=not_comunicated))])
+  File "/usr/local/lib/python3.9/site-packages/imap_tools/query.py", line 19, in __init__
+    raise ValueError('{} expects params'.format(self.__class__.__name__))
+ValueError: OR expects params
+[pid: 11|app: 0|req: 1/1] 172.22.0.1 () {50 vars in 1358 bytes} [Wed Aug 18 08:27:51 2021] GET / => generated 67475 bytes in 1214 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/app/./emails/view.py", line 91, in home_view
+    set([msg.from_ for msg in mailbox.fetch(OR(from_=not_comunicated))])
+  File "/usr/local/lib/python3.9/site-packages/imap_tools/query.py", line 19, in __init__
+    raise ValueError('{} expects params'.format(self.__class__.__name__))
+ValueError: OR expects params
+[pid: 9|app: 0|req: 1/2] 172.22.0.1 () {50 vars in 1358 bytes} [Wed Aug 18 08:27:56 2021] GET / => generated 67475 bytes in 1200 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 2/3] 172.22.0.1 () {50 vars in 1438 bytes} [Wed Aug 18 08:28:53 2021] GET /admin/emails/sentmail/29/change/ => generated 0 bytes in 47 msecs (HTTP/1.1 302) 10 headers in 556 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 3/4] 172.22.0.1 () {50 vars in 1585 bytes} [Wed Aug 18 08:28:53 2021] GET /admin/ => generated 5625 bytes in 67 msecs (HTTP/1.1 200) 9 headers in 391 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 4/5] 172.22.0.1 () {46 vars in 1261 bytes} [Wed Aug 18 08:28:53 2021] GET /static/admin/css/dashboard.css => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 6/7] 172.22.0.1 () {44 vars in 1273 bytes} [Wed Aug 18 08:28:54 2021] GET /static/admin/img/icon-alert.svg => generated 504 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 7 headers in 257 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 6/7] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:28:54 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 7/8] 172.22.0.1 () {46 vars in 1338 bytes} [Wed Aug 18 08:28:54 2021] GET /static/admin/img/icon-changelink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 8/9] 172.22.0.1 () {48 vars in 1369 bytes} [Wed Aug 18 08:28:56 2021] GET /admin/emails/contact/ => generated 6982 bytes in 72 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 10/10] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 5 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 3/11] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 11/12] 172.22.0.1 () {46 vars in 1248 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/js/core.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 12/14] 172.22.0.1 () {46 vars in 1254 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/js/actions.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 4/14] 172.22.0.1 () {46 vars in 1292 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 13/16] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 5/16] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 5/17] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 9 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 14/18] 172.22.0.1 () {46 vars in 1284 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 14/19] 172.22.0.1 () {44 vars in 1173 bytes} [Wed Aug 18 08:28:56 2021] GET /admin/jsi18n/ => generated 3195 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 15/20] 172.22.0.1 () {46 vars in 1316 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/img/search.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 6/21] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 16/22] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:28:56 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 7/23] 172.22.0.1 () {48 vars in 1392 bytes} [Wed Aug 18 08:29:03 2021] GET /admin/emails/contact/add/ => generated 11430 bytes in 135 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 17/24] 172.22.0.1 () {46 vars in 1272 bytes} [Wed Aug 18 08:29:03 2021] GET /static/admin/css/forms.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 8/25] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:29:03 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 19/26] 172.22.0.1 () {46 vars in 1284 bytes} [Wed Aug 18 08:29:03 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 9/27] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:29:03 2021] GET /static/admin/js/core.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 10/28] 172.22.0.1 () {46 vars in 1296 bytes} [Wed Aug 18 08:29:03 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 20/29] 172.22.0.1 () {46 vars in 1258 bytes} [Wed Aug 18 08:29:03 2021] GET /static/admin/js/actions.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 20/30] 172.22.0.1 () {44 vars in 1177 bytes} [Wed Aug 18 08:29:03 2021] GET /admin/jsi18n/ => generated 3195 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 11/31] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:29:04 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 22/32] 172.22.0.1 () {46 vars in 1256 bytes} [Wed Aug 18 08:29:04 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 22/33] 172.22.0.1 () {46 vars in 1288 bytes} [Wed Aug 18 08:29:04 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 23/34] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:29:04 2021] GET /static/admin/css/widgets.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 24/35] 172.22.0.1 () {46 vars in 1276 bytes} [Wed Aug 18 08:29:04 2021] GET /static/admin/js/prepopulate_init.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 25/36] 172.22.0.1 () {46 vars in 1322 bytes} [Wed Aug 18 08:29:04 2021] GET /static/admin/img/icon-no.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 26/37] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:29:04 2021] GET /static/admin/js/change_form.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 12/38] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:29:04 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 27/39] 172.22.0.1 () {56 vars in 1534 bytes} [Wed Aug 18 08:29:13 2021] POST /admin/emails/contact/add/ => generated 0 bytes in 35 msecs (HTTP/1.1 302) 10 headers in 594 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 28/40] 172.22.0.1 () {50 vars in 1641 bytes} [Wed Aug 18 08:29:13 2021] GET /admin/emails/contact/ => generated 10390 bytes in 95 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 29/41] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:29:13 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 14/42] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 14/43] 172.22.0.1 () {44 vars in 1173 bytes} [Wed Aug 18 08:29:13 2021] GET /admin/jsi18n/ => generated 3195 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 30/44] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 31/45] 172.22.0.1 () {46 vars in 1254 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/js/actions.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 32/46] 172.22.0.1 () {46 vars in 1292 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 33/47] 172.22.0.1 () {46 vars in 1248 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/js/core.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 34/48] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 35/49] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 36/50] 172.22.0.1 () {46 vars in 1284 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 15/51] 172.22.0.1 () {46 vars in 1316 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/img/search.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 37/52] 172.22.0.1 () {46 vars in 1320 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/img/icon-yes.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 38/53] 172.22.0.1 () {46 vars in 1318 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/img/icon-no.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 16/54] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 17/55] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:29:14 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/app/./emails/view.py", line 97, in home_view
+    first_template = FollowUpEmailsTemplate.objects.get(
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+emails.models.FollowUpEmailsTemplate.DoesNotExist: FollowUpEmailsTemplate matching query does not exist.
+[pid: 11|app: 0|req: 39/56] 172.22.0.1 () {50 vars in 1358 bytes} [Wed Aug 18 08:29:16 2021] GET / => generated 72166 bytes in 3158 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 40/57] 172.22.0.1 () {48 vars in 1414 bytes} [Wed Aug 18 08:30:20 2021] GET /admin/emails/followupemailstemplate/ => generated 6638 bytes in 61 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 18/58] 172.22.0.1 () {46 vars in 1295 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 42/59] 172.22.0.1 () {46 vars in 1295 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 42/60] 172.22.0.1 () {44 vars in 1188 bytes} [Wed Aug 18 08:30:20 2021] GET /admin/jsi18n/ => generated 3195 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 9|app: 0|req: 19/61] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 20/62] 172.22.0.1 () {46 vars in 1263 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/js/core.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 21/63] 172.22.0.1 () {46 vars in 1307 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 22/64] 172.22.0.1 () {46 vars in 1269 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/js/actions.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 23/65] 172.22.0.1 () {46 vars in 1299 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 44/66] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 44/67] 172.22.0.1 () {46 vars in 1267 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 5 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 24/68] 172.22.0.1 () {46 vars in 1331 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/img/search.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 45/69] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 46/70] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:30:20 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 25/71] 172.22.0.1 () {48 vars in 1437 bytes} [Wed Aug 18 08:30:23 2021] GET /admin/emails/followupemailstemplate/add/ => generated 11561 bytes in 69 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 27/72] 172.22.0.1 () {46 vars in 1287 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/css/forms.css => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 47/73] 172.22.0.1 () {46 vars in 1299 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 48/74] 172.22.0.1 () {46 vars in 1281 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 49/75] 172.22.0.1 () {44 vars in 1238 bytes} [Wed Aug 18 08:30:23 2021] GET /static/ckeditor/ckeditor/ckeditor.js => generated 746737 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 266 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 28/76] 172.22.0.1 () {44 vars in 1230 bytes} [Wed Aug 18 08:30:23 2021] GET /static/ckeditor/ckeditor-init.js => generated 1498 bytes in 13 msecs via sendfile() (HTTP/1.1 200) 7 headers in 269 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 28/77] 172.22.0.1 () {44 vars in 1192 bytes} [Wed Aug 18 08:30:23 2021] GET /admin/jsi18n/ => generated 3195 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 50/78] 172.22.0.1 () {46 vars in 1267 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/core.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 29/79] 172.22.0.1 () {46 vars in 1311 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 30/80] 172.22.0.1 () {46 vars in 1273 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/actions.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 31/81] 172.22.0.1 () {46 vars in 1271 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 32/82] 172.22.0.1 () {46 vars in 1281 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 51/83] 172.22.0.1 () {46 vars in 1303 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 33/84] 172.22.0.1 () {46 vars in 1291 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/prepopulate_init.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 52/85] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/css/widgets.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 53/86] 172.22.0.1 () {46 vars in 1281 bytes} [Wed Aug 18 08:30:23 2021] GET /static/admin/js/change_form.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 34/87] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:30:24 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 54/88] 172.22.0.1 () {44 vars in 1247 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/config.js?t=L4KA => generated 338 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 261 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 35/89] 172.22.0.1 () {44 vars in 1297 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=L4KA => generated 48483 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 250 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 55/90] 172.22.0.1 () {44 vars in 1249 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/lang/en.js?t=L4KA => generated 18349 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 259 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 56/91] 172.22.0.1 () {44 vars in 1247 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/styles.js?t=L4KA => generated 5579 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 262 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 57/92] 172.22.0.1 () {44 vars in 1323 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=L4KA => generated 381 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 247 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 36/93] 172.22.0.1 () {44 vars in 1307 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=L4KA => generated 419 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 248 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 38/94] 172.22.0.1 () {44 vars in 1294 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css => generated 249 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 248 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 38/95] 172.22.0.1 () {44 vars in 1326 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css => generated 1145 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 257 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 58/96] 172.22.0.1 () {44 vars in 1326 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css => generated 1513 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 257 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 39/97] 172.22.0.1 () {44 vars in 1372 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=cae20318d4 => generated 12533 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 250 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 40/98] 172.22.0.1 () {44 vars in 1267 bytes} [Wed Aug 18 08:30:24 2021] GET /static/ckeditor/ckeditor/contents.css?t=L4KA => generated 3094 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 251 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 59/99] 172.22.0.1 () {56 vars in 1579 bytes} [Wed Aug 18 08:30:40 2021] POST /admin/emails/followupemailstemplate/add/ => generated 0 bytes in 31 msecs (HTTP/1.1 302) 10 headers in 702 bytes (2 switches on core 0)
+[pid: 9|app: 0|req: 41/100] 172.22.0.1 () {50 vars in 1779 bytes} [Wed Aug 18 08:30:40 2021] GET /admin/emails/followupemailstemplate/ => generated 9142 bytes in 80 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 60/101] 172.22.0.1 () {46 vars in 1295 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 42/102] 172.22.0.1 () {44 vars in 1188 bytes} [Wed Aug 18 08:30:40 2021] GET /admin/jsi18n/ => generated 3195 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 9|app: 0|req: 43/103] 172.22.0.1 () {46 vars in 1295 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 61/104] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 62/105] 172.22.0.1 () {46 vars in 1263 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/js/core.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 44/106] 172.22.0.1 () {46 vars in 1307 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 63/107] 172.22.0.1 () {46 vars in 1269 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/js/actions.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 45/108] 172.22.0.1 () {46 vars in 1267 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 64/109] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 46/110] 172.22.0.1 () {46 vars in 1299 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 65/111] 172.22.0.1 () {46 vars in 1331 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/img/search.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 66/112] 172.22.0.1 () {46 vars in 1335 bytes} [Wed Aug 18 08:30:40 2021] GET /static/admin/img/icon-yes.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 47/113] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:30:41 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 48/114] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:30:41 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 67/115] 172.22.0.1 () {46 vars in 1334 bytes} [Wed Aug 18 08:30:41 2021] GET /static/admin/img/sorting-icons.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/app/./emails/view.py", line 91, in home_view
+    set([msg.from_ for msg in mailbox.fetch(OR(from_=not_comunicated))])
+  File "/usr/local/lib/python3.9/site-packages/imap_tools/query.py", line 19, in __init__
+    raise ValueError('{} expects params'.format(self.__class__.__name__))
+ValueError: OR expects params
+[pid: 11|app: 0|req: 68/116] 172.22.0.1 () {50 vars in 1358 bytes} [Wed Aug 18 08:30:44 2021] GET / => generated 67475 bytes in 1164 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 49/117] 172.22.0.1 () {48 vars in 1399 bytes} [Wed Aug 18 08:33:17 2021] GET /admin/emails/contact/ => generated 10191 bytes in 86 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 69/118] 172.22.0.1 () {44 vars in 1173 bytes} [Wed Aug 18 08:33:17 2021] GET /admin/jsi18n/ => generated 3195 bytes in 21 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 11|app: 0|req: 70/119] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 50/121] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 5 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 51/122] 172.22.0.1 () {46 vars in 1292 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 52/123] 172.22.0.1 () {46 vars in 1254 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/js/actions.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 71/123] 172.22.0.1 () {46 vars in 1248 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/js/core.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 53/124] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 16 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 72/125] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 73/126] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 74/127] 172.22.0.1 () {46 vars in 1284 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 54/128] 172.22.0.1 () {46 vars in 1316 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/img/search.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 55/129] 172.22.0.1 () {46 vars in 1320 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/img/icon-yes.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 75/130] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 56/131] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:33:17 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 76/132] 172.22.0.1 () {48 vars in 1392 bytes} [Wed Aug 18 08:36:41 2021] GET /admin/emails/contact/add/ => generated 11430 bytes in 100 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 77/133] 172.22.0.1 () {46 vars in 1272 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/css/forms.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 58/134] 172.22.0.1 () {46 vars in 1284 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 59/135] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 78/136] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/core.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 79/137] 172.22.0.1 () {46 vars in 1296 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 60/138] 172.22.0.1 () {44 vars in 1177 bytes} [Wed Aug 18 08:36:42 2021] GET /admin/jsi18n/ => generated 3195 bytes in 35 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 9|app: 0|req: 61/139] 172.22.0.1 () {46 vars in 1288 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 81/140] 172.22.0.1 () {46 vars in 1258 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/actions.js => generated 0 bytes in 9 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 61/141] 172.22.0.1 () {46 vars in 1256 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 7 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 81/142] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 62/143] 172.22.0.1 () {46 vars in 1277 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/css/widgets.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 63/144] 172.22.0.1 () {46 vars in 1276 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/prepopulate_init.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 64/145] 172.22.0.1 () {46 vars in 1322 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/img/icon-no.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 82/146] 172.22.0.1 () {46 vars in 1266 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/js/change_form.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 83/147] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:36:42 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 65/148] 172.22.0.1 () {56 vars in 1534 bytes} [Wed Aug 18 08:36:59 2021] POST /admin/emails/contact/add/ => generated 0 bytes in 33 msecs (HTTP/1.1 302) 10 headers in 595 bytes (1 switches on core 1)
+[pid: 11|app: 0|req: 84/149] 172.22.0.1 () {50 vars in 1642 bytes} [Wed Aug 18 08:36:59 2021] GET /admin/emails/contact/ => generated 11127 bytes in 101 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 9|app: 0|req: 66/150] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:36:59 2021] GET /static/admin/css/changelists.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 67/151] 172.22.0.1 () {46 vars in 1280 bytes} [Wed Aug 18 08:36:59 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 86/152] 172.22.0.1 () {46 vars in 1248 bytes} [Wed Aug 18 08:36:59 2021] GET /static/admin/js/core.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 69/153] 172.22.0.1 () {46 vars in 1292 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 69/154] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:36:59 2021] GET /static/admin/js/jquery.init.js => generated 0 bytes in 9 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 86/155] 172.22.0.1 () {44 vars in 1173 bytes} [Wed Aug 18 08:36:59 2021] GET /admin/jsi18n/ => generated 3195 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 70/156] 172.22.0.1 () {46 vars in 1254 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/js/actions.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 71/157] 172.22.0.1 () {46 vars in 1252 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/js/urlify.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 72/158] 172.22.0.1 () {46 vars in 1262 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/js/prepopulate.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 87/159] 172.22.0.1 () {46 vars in 1284 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 88/160] 172.22.0.1 () {46 vars in 1316 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/img/search.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 9|app: 0|req: 73/161] 172.22.0.1 () {46 vars in 1320 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/img/icon-yes.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 74/162] 172.22.0.1 () {46 vars in 1318 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/img/icon-no.svg => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 0)
+[pid: 11|app: 0|req: 89/163] 172.22.0.1 () {46 vars in 1332 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/img/icon-addlink.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 11|app: 0|req: 90/164] 172.22.0.1 () {46 vars in 1330 bytes} [Wed Aug 18 08:37:00 2021] GET /static/admin/img/tooltag-add.svg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 134 bytes (0 switches on core 1)
+[pid: 9|app: 0|req: 75/165] 172.22.0.1 () {50 vars in 1358 bytes} [Wed Aug 18 08:37:02 2021] GET / => generated 788 bytes in 1408 msecs (HTTP/1.1 200) 7 headers in 348 bytes (1 switches on core 0)
+[pid: 9|app: 0|req: 76/166] 172.22.0.1 () {50 vars in 1358 bytes} [Wed Aug 18 08:37:05 2021] GET / => generated 788 bytes in 1634 msecs (HTTP/1.1 200) 7 headers in 348 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed Aug 18 12:51:28 2021] ***
+compiled with version: 8.3.0 on 18 August 2021 12:17:18
+os: Linux-5.11.0-25-generic #27~20.04.1-Ubuntu SMP Tue Jul 13 17:41:23 UTC 2021
+nodename: c6da7891cc2f
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /app
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.6 (default, Jul 22 2021, 15:16:20)  [GCC 8.3.0]
+Python main interpreter initialized at 0x557c23444360
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557c23444360 pid: 8 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8)
+spawned uWSGI worker 1 (pid: 9, cores: 2)
+spawned uWSGI worker 2 (pid: 11, cores: 2)
