@@ -1,34 +1,166 @@
-{% extends 'base.html' %}
-
-{% block title %} Home {% endblock %}
-
-{% block scripts %}
-<script>
-</script>
-{% endblock %}
-
+{% extends 'master_page.html' %}
+{% block title %}Home{% endblock %}
 {% block content %}
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-</nav>
-
-<main role="main">
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <ul class="container">
-      {% comment %} {{ len(inbox) }} {% endcomment %}
-      {% for email in new_emails %}
-      <li>
-        {{msgid}} -> {{ email.generated_subject }} -> {{
-        data.data }}
-        <form action="{% url 'send_email' 29 %}" method="post">
-        {% csrf_token %}
-        <input type="submit" value="Vote">
-        </form>
-      </li>
-      {% endfor %}
-      {% comment %} {{user.imap_server}} {% endcomment %}
-    </ul>
-  </div>
-</main>
+    <h1>Follow Up - Home</h1>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+                class="nav-link active"
+                id="nav-home-tab"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+                href="#pane1"
+                data-toggle="tab"
+            >
+                in progress
+            </button>
+            <button
+                class="nav-link"
+                id="nav-profile-tab"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+                data-toggle="tab"
+                href="#pane2"
+            >
+                communicated
+            </button>
+            <button
+                class="nav-link"
+                id="nav-profile-tab"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+                data-toggle="tab"
+                href="#pane3"
+            >
+                no responsed
+            </button>
+        </div>
+    </nav>
+    <div class="tab-content clearfixt">
+        <div class="tab-pane active" id="pane1">
+            <br />
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">email</th>
+                        <th scope="col">actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for email in new_emails %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td><strong>email: </strong>{{email.contact.email}} ({{email.contact.client}})<hr />
+                                <strong>subject: </strong>{{email.generated_subject}}<hr />
+                                {{email.generated_text |safe}}</td>
+                            <td>{{email.template.index}}<hr />
+                                {{email.available_to_send}}<hr />
+                                <div class="d-grid gap-2">
+                                    <a
+                                        href="/send_email/{{email.id}}"
+                                        class="btn btn-primary"
+                                    >
+                                        SEND
+                                    </a>
+                                </div>
+                                <a
+                                    href="/admin/emails/sentmail/?contact__id__exact={{email.contact.id}}"
+                                    class="btn btn-link btn-sm"
+                                >
+                                    History
+                                </a>
+                                <a
+                                    href="/admin/emails/contact/{{email.contact.id}}/change/"
+                                    class="btn btn-link btn-sm"
+                                >
+                                    User Info
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane" id="pane2">
+            <br />
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">client</th>
+                        <th scope="col">email</th>
+                        <th scope="col">detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for user in communicated %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{user.client}}</td>
+                            <td>{{user.email}}</td>
+                            <td>
+                                <a
+                                    href="/admin/emails/sentmail/?contact__id__exact={{user.id}}"
+                                    class="btn btn-link btn-sm"
+                                >
+                                    History
+                                </a>
+                                <a
+                                    href="/admin/emails/contact/{{user.id}}/change/"
+                                    class="btn btn-link btn-sm"
+                                >
+                                    User Info
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane" id="pane3">
+            <br />
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">client</th>
+                        <th scope="col">email</th>
+                        <th scope="col">detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for email in not_responsed %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{email.contact.client}}</td>
+                            <td>{{email.contact.email}}</td>
+                            <td>
+                                <a
+                                    href="/admin/emails/sentmail/?contact__id__exact={{email.contact.id}}"
+                                    class="btn btn-link btn-sm"
+                                >
+                                    History
+                                </a>
+                                <a
+                                    href="/admin/emails/contact/{{email.contact.id}}/change/"
+                                    class="btn btn-link btn-sm"
+                                >
+                                    User Info
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 {% endblock %}
